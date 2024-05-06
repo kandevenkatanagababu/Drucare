@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class Practice 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the numbers");
+		int n=sc.nextInt();
+		if(n>=0)
+		{
+		System.out.println("positive numbers");
+		}
+		if(n<=0)
+		{
+			System.out.println("Negative number");
+		}
+		if(n%2==0)
+		{
+			System.out.println("Even number");
+		}
+		if(n%2=0)
+		{
+			System.out.println("Odd Number");
+		}
+
+	}
+}
