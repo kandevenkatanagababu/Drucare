@@ -1,0 +1,14 @@
+package sample;
+
+public class Square
+{
+	public static void main(String[] args) 
+	{
+		double number=3.9;
+		double square=number*number;
+		System.out.println("The number of the square 3.9 is "+ square);
+		
+		
+	}
+
+}
