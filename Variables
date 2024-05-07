@@ -1,0 +1,13 @@
+package sample;
+
+public class Variables
+{
+	public static void main(String[] args)
+	{
+		int value=5;
+		double digit=6.2;
+		System.out.println(value);
+		
+	}
+
+}
