@@ -1,0 +1,17 @@
+package sample;
+
+public class DataTypes
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Range of integer "+Integer.MIN_VALUE +" to"+Integer.MAX_VALUE);
+		int a=20;
+		double d=2.3;
+		char c='V';
+		System.out.println(a);
+		System.out.println(d);
+		System.out.println(c);
+		
+	}
+
+}
