@@ -65,18 +65,21 @@ public class EmployeeController
 		{
 			return service.getEmployeePage(pageNo, sortBy);
 		}
-		@GetMapping("/managerInfo")
-		public Object getManagerinfo()
+		//RestTemplate
+		@GetMapping("/managerInfo/{empId}")
+		public ManagerInfo getManagerinfo(@PathVariable int empId)
 		{
-			String url="http:////ManagerData/all";
-			try {
-				return template.getForObject(url, ManagerInfo.class);
+			String url="http://ManagerData/all"+empId;
+			ManagerInfo info =null;
+			try 
+			{
+				return  template.getForObject(url, ManagerInfo.class);
 			}
 			catch(RestClientException e)
 			{
 				e.printStackTrace();
 			}
-			return url;
+			return  info;
 	
 		}
 		
